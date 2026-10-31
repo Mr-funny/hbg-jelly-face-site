@@ -1,0 +1,42 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate skill structure
+        run: python3 tools/validate_skill.py
+      - name: Scan for secrets and private paths
+        run: python3 tools/check_secrets.py
+      - name: Check shell syntax
+        run: |
+          for file in skill/hbg-jelly-face-site/scripts/*.sh; do
+            bash -n "$file"
+          done
+      - name: Compile Python scripts
+        run: python3 -m py_compile skill/hbg-jelly-face-site/scripts/*.py
+      - name: Validate installer
+        run: sh -n install.sh
+      - name: Install into a temp dir
+        run: sh install.sh --target "$RUNNER_TEMP/skill-check"
+      - name: Build a demo site from the template
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg >/dev/null
+          bash skill/hbg-jelly-face-site/scripts/new_site.sh "$RUNNER_TEMP/site" --demo
+          python3 skill/hbg-jelly-face-site/scripts/prepare_faces.py "$RUNNER_TEMP/site2" \
+            "base=skill/hbg-jelly-face-site/template/img/base.webp" \
+            "grin=skill/hbg-jelly-face-site/template/img/grin.webp"
+          test -f "$RUNNER_TEMP/site/img/faces.json"
+          test -f "$RUNNER_TEMP/site2/img/faces.json"

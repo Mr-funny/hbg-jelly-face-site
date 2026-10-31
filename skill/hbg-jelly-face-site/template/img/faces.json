@@ -1,0 +1,47 @@
+{
+  "base": "base.webp",
+  "pain": [
+    "crosseyed.webp",
+    "puff.webp",
+    "squint.webp",
+    "surprised.webp"
+  ],
+  "fun": [
+    "grin.webp",
+    "laugh.webp",
+    "smirk.webp",
+    "wink_tongue.webp"
+  ],
+  "boxing": {
+    "dizzy": "dizzy.webp",
+    "left": "hit_left.webp",
+    "right": "hit_right.webp",
+    "ko": "dmg4_ko.webp",
+    "center": "nose.webp",
+    "taunt": "taunt.webp",
+    "up": "uppercut.webp",
+    "wince": "wince.webp",
+    "stages": [
+      {
+        "idle": "dmg1.webp",
+        "left": "dmg1_hit_left.webp",
+        "right": "dmg1_hit_right.webp"
+      },
+      {
+        "idle": "dmg2.webp",
+        "left": "dmg2_hit_left.webp",
+        "right": "dmg2_hit_right.webp"
+      },
+      {
+        "idle": "dmg3.webp",
+        "left": "dmg3_hit_left.webp",
+        "right": "dmg3_hit_right.webp"
+      },
+      {
+        "idle": "dmg4.webp",
+        "left": "dmg4_hit_left.webp",
+        "right": "dmg4_hit_right.webp"
+      }
+    ]
+  }
+}
