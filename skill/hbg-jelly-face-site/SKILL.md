@@ -1,14 +1,14 @@
 ---
-name: hbg-jelly-face-site
+name: hbg-暴打boss
 version: 1.1.0
-display_name: "果冻拳王：捏脸 + 拳击小游戏"
-display_name_en: "HBG Jelly Punch"
+display_name: "暴打boss：捏脸 + 拳击小游戏"
+display_name_en: "HBG Beat Boss"
 description_zh: "做一个网页小游戏：橙色圆盘里探出一个角色，可以把脸拽成果冻、松手回弹换表情；也可以玩 30 秒拳击挑战，打得越多脸越肿，打满 K.O.。角色可以用自己上传的表情图，也可以配置任意 OpenAI 兼容图像接口一键生成；一条命令发布到 GitHub Pages。"
 description_en: "Build a browser mini-game: a character pops out of an orange disc. Pinch mode stretches the face like jelly and swaps expressions; boxing mode is a 30-second challenge where the face gets more bruised with every hit until K.O. Bring your own expression photos or generate them with any OpenAI-compatible image API, then publish to GitHub Pages."
-description: 制作"果冻拳王"网页小游戏（灵感来自 rameerez.com 的可拉扯头像）：左边是游戏标题和规则，右边橙色圆盘里探出一个抠好图的角色。两种模式：🤏 捏脸模式，用鼠标或手指把脸像太妃糖一样拉长，松手回弹并换表情；🥊 拳击挑战，30 秒限时出拳，左脸、右脸、下巴、鼻子各有不同反应，连击、暴击、晕眩星星、屏幕震动、合成音效，累计伤害让角色从毫发无伤一路变成面目全非并 K.O.，结束显示成绩和称号。three.js 网格 + 弹簧软体模拟，纯静态页面。角色图可以用户自己上传（透明背景 PNG 最好），也可以用用户自己配置的图像接口密钥（OpenAI 兼容：images/generations + images/edits）从一张照片或一句描述生成整套表情和四级伤势；密钥只从环境变量或 .env 读取，永远不写进页面和仓库。附带一键发布 GitHub Pages 的脚本（发布前扫描密钥）。当用户想做"拖拽变形的脸""果冻脸""打脸/拳击小游戏""把朋友或自己做成可以揍的网页""复刻 rameerez.com 头像效果"，或想把这种页面放上 GitHub Pages 时使用。
+description: 制作"暴打boss"网页小游戏（灵感来自 rameerez.com 的可拉扯头像）：左边是游戏标题和规则，右边橙色圆盘里探出一个抠好图的角色。两种模式：🤏 捏脸模式，用鼠标或手指把脸像太妃糖一样拉长，松手回弹并换表情；🥊 拳击挑战，30 秒限时出拳，左脸、右脸、下巴、鼻子各有不同反应，连击、暴击、晕眩星星、屏幕震动、合成音效，累计伤害让角色从毫发无伤一路变成面目全非并 K.O.，结束显示成绩和称号。three.js 网格 + 弹簧软体模拟，纯静态页面。角色图可以用户自己上传（透明背景 PNG 最好），也可以用用户自己配置的图像接口密钥（OpenAI 兼容：images/generations + images/edits）从一张照片或一句描述生成整套表情和四级伤势；密钥只从环境变量或 .env 读取，永远不写进页面和仓库。附带一键发布 GitHub Pages 的脚本（发布前扫描密钥）。当用户想做"拖拽变形的脸""果冻脸""打脸/拳击小游戏""把朋友或自己做成可以揍的网页""复刻 rameerez.com 头像效果"，或想把这种页面放上 GitHub Pages 时使用。
 ---
 
-# HBG 果冻拳王
+# HBG 暴打boss
 
 一个网页小游戏，主角是一张能被拽、能被揍的脸。页面有两种模式，在角色下方切换：
 
@@ -31,7 +31,7 @@ description: 制作"果冻拳王"网页小游戏（灵感来自 rameerez.com 的
    - **B. 上传一张照片，用接口生成全套**：需要用户自己的图像接口密钥。
    - **C. 一句话描述一个虚构角色，用接口生成**：同样需要密钥。
    - **D. 自己准备好所有表情图**：直接导入，不需要密钥。
-2. **游戏名和标语**：默认"果冻拳王 / 捏他、揍他，把他打成猪头。"
+2. **游戏名和标语**：默认"暴打boss / 捏他、揍他，把他打成猪头。"
 3. **主色**：默认橙色 `#f2470f` 配米色背景。
 4. **要不要发布到 GitHub Pages**，仓库叫什么名字。
 

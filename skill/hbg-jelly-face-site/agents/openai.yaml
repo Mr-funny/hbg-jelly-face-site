@@ -1,8 +1,8 @@
 interface:
-  display_name: "Jelly Punch"
-  short_description: "果冻拳王：能捏能揍的网页小游戏，30 秒拳击挑战越打越肿"
+  display_name: "Beat Boss"
+  short_description: "暴打boss：能捏能揍的网页小游戏，30 秒拳击挑战越打越肿"
   brand_color: "#F2470F"
-  default_prompt: "使用 $hbg-jelly-face-site 用我上传的照片做一个果冻拳王小游戏（捏脸 + 30 秒拳击挑战），并发布到 GitHub Pages。"
+  default_prompt: "使用 $hbg-暴打boss 用我上传的照片做一个暴打boss小游戏（捏脸 + 30 秒拳击挑战），并发布到 GitHub Pages。"
 
 policy:
   allow_implicit_invocation: true
