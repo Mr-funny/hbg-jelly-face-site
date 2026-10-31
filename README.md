@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Agent%20Skill-SKILL.md-8b5cf6?style=flat-square" alt="Agent Skill" />
   <img src="https://img.shields.io/badge/three.js-spring%20mesh-111111?style=flat-square" alt="three.js spring mesh" />
   <img src="https://img.shields.io/badge/Images-OpenAI%20compatible-2563eb?style=flat-square" alt="OpenAI-compatible image API" />
-  <img src="https://img.shields.io/badge/Key-BYO%20%C2%B7%20never%20committed-0f766e?style=flat-square" alt="Bring your own key" />
+  <img src="https://img.shields.io/badge/API%20Key-bring%20your%20own-0f766e?style=flat-square" alt="Bring your own key" />
   <img src="https://img.shields.io/badge/Deploy-GitHub%20Pages-f2470f?style=flat-square" alt="GitHub Pages" />
   <img src="https://img.shields.io/badge/License-MIT-25221f?style=flat-square" alt="MIT" />
 </p>
